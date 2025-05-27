@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="GeoPhoto Map Banner" width="600"/>
+  <img src="./assets/banner.jpg" alt="GeoPhoto Map Banner" width="600"/>
   <h1>📍 GeoPhoto Map 🗺️</h1>
   <p><strong>Transforme suas memórias fotográficas em uma jornada interativa no mapa!</strong></p>
   <p>Este projeto extrai automaticamente as coordenadas GPS de suas fotos e as exibe em um mapa dinâmico e elegante, completo com uma galeria de miniaturas.</p>
@@ -19,22 +19,19 @@
 <div align="center">
   <img src="https://img.shields.io/github/stars/MagalhaesVini/GeoPhotoMap?style=social" alt="GitHub Stars"/>
   <img src="https://img.shields.io/github/forks/MagalhaesVini/GeoPhotoMap?style=social" alt="GitHub Forks"/>
-  <img src="https://img.shields.io/github/license/MagalhaesVini/GeoPhotoMap?style=flat-square" alt="License"/>
   <img src="https://img.shields.io/github/last-commit/MagalhaesVini/GeoPhotoMap?style=flat-square" alt="Last Commit"/>
 </div>
 
 ## 📚 Sumário
 
-- [✨ Funcionalidades Incríveis](#-funcionalidades-incríveis)
-- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-- [⚙️ Pré-requisitos](#️-pré-requisitos)
-- [🚀 Como Rodar o Projeto (Passo a Passo Mágico)](#-como-rodar-o-projeto-passo-a-passo-mágico)
-- [🔧 Como Funciona a Mágica? (Detalhes Técnicos)](#-como-funciona-a-mágica-detalhes-técnicos)
-- [💡 Possíveis Melhorias e Ideias Futuras](#-possíveis-melhorias-e-ideias-futuras)
+- [✨ Funcionalidades Incríveis](#-funcionalidades-incríveis)  
+- [🎬 Demonstração Rápida](#-demonstração-rápida)  
+- [🛠 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📂 Estrutura do Projeto](#-estrutura-do-projeto)  
+- [⚙️ Pré-requisitos](#-pré-requisitos)  
+- [🚀 Como Rodar o Projeto: (Passo a Passo)](#-como-rodar-o-projeto-passo-a-passo)  
+- [🔧 Como Funciona a Mágica? (Detalhes Técnicos)](#-como-funciona-a-mágica-detalhes-técnicos)  
 - [🤔 Solução de Problemas Comuns](#-solução-de-problemas-comuns)
-- [🤝 Como Contribuir](#-como-contribuir)
-- [📜 Licença](#-licença)
 
 ---
 
@@ -54,13 +51,15 @@
 ## 🎬 Demonstração Rápida
 
 <div align="center">
-  <img src="URL_PARA_UM_GIF_ANIMADO_DO_SEU_SISTEMA_EM_ACAO.gif" alt="GeoPhoto Map Demo" width="700"/>
-  <p><em>(Imagine aqui um GIF mostrando: 1. Imagens na pasta `img`. 2. O script `gerar_csv.js` rodando. 3. O `app.js` rodando. 4. O mapa sendo exibido no navegador com as fotos.)</em></p>
+  <img src="./assets/GeoPhotoMap1.gif"/>
+  <p><em>(1. Imagens na pasta `img`.)</em></p>
+  <img src="./assets/GeoPhotoMap2.gif"/>
+  <p><em>(2. O script `gerar_csv.js` rodando. 3. O `app.js` rodando. 4. O mapa sendo exibido no navegador com as fotos.)</em></p>
 </div>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 * **Backend:**
     * Node.js: Ambiente de execução JavaScript.
