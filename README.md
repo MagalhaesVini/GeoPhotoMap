@@ -1,5 +1,115 @@
+<div align="center">
+  <img src="https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="GeoPhoto Map Banner" width="600"/>
+  <h1>📍 GeoPhoto Map 🗺️</h1>
+  <p><strong>Transforme suas memórias fotográficas em uma jornada interativa no mapa!</strong></p>
+  <p>Este projeto extrai automaticamente as coordenadas GPS de suas fotos e as exibe em um mapa dinâmico e elegante, completo com uma galeria de miniaturas.</p>
+</div>
 
-## 🚀 Como Rodar o Projeto: Passo a Passo Mágico!
+<div align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=Leaflet&logoColor=white" alt="Leaflet"/>
+  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge&logo=ejs&logoColor=white" alt="EJS"/>
+  <img src="https://img.shields.io/badge/CSV-239120?style=for-the-badge&logo=csv&logoColor=white" alt="CSV"/>
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/github/stars/MagalhaesVini/GeoPhotoMap?style=social" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/forks/MagalhaesVini/GeoPhotoMap?style=social" alt="GitHub Forks"/>
+  <img src="https://img.shields.io/github/license/MagalhaesVini/GeoPhotoMap?style=flat-square" alt="License"/>
+  <img src="https://img.shields.io/github/last-commit/MagalhaesVini/GeoPhotoMap?style=flat-square" alt="Last Commit"/>
+</div>
+
+## 📚 Sumário
+
+- [✨ Funcionalidades Incríveis](#-funcionalidades-incríveis)
+- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
+- [⚙️ Pré-requisitos](#️-pré-requisitos)
+- [🚀 Como Rodar o Projeto (Passo a Passo Mágico)](#-como-rodar-o-projeto-passo-a-passo-mágico)
+- [🔧 Como Funciona a Mágica? (Detalhes Técnicos)](#-como-funciona-a-mágica-detalhes-técnicos)
+- [💡 Possíveis Melhorias e Ideias Futuras](#-possíveis-melhorias-e-ideias-futuras)
+- [🤔 Solução de Problemas Comuns](#-solução-de-problemas-comuns)
+- [🤝 Como Contribuir](#-como-contribuir)
+- [📜 Licença](#-licença)
+
+---
+
+## ✨ Funcionalidades Incríveis
+
+* 📸 **Extração Mágica de Coordenadas:** Lê automaticamente dados GPS (latitude e longitude) de metadados EXIF de suas imagens JPEG.
+* 📝 **Organização em CSV:** Salva as informações extraídas (nome do arquivo, latitude, longitude e um snippet HTML da imagem) em um arquivo CSV nomeado com a data atual.
+* 🗺️ **Mapa Interativo com Leaflet:** Exibe suas fotos como marcadores em um mapa do Google Maps (camada híbrida), permitindo zoom e navegação.
+* 🖼️ **Galeria Charmosa:** Apresenta uma galeria de miniaturas das suas fotos ao lado do mapa. Clicar em uma miniatura centraliza o mapa no local da foto e abre um popup.
+* 🎈 **Popups Informativos:** Cada marcador no mapa, ao ser clicado, exibe a imagem e seu nome.
+* 🚀 **Servidor Local com Express:** Um servidor Node.js simples para hospedar sua aplicação e visualizar o mapa no navegador.
+* 🎨 **Visual Limpo e Responsivo:** Interface agradável e que se adapta bem (embora o foco principal seja desktop).
+
+---
+
+
+## 🎬 Demonstração Rápida
+
+<div align="center">
+  <img src="URL_PARA_UM_GIF_ANIMADO_DO_SEU_SISTEMA_EM_ACAO.gif" alt="GeoPhoto Map Demo" width="700"/>
+  <p><em>(Imagine aqui um GIF mostrando: 1. Imagens na pasta `img`. 2. O script `gerar_csv.js` rodando. 3. O `app.js` rodando. 4. O mapa sendo exibido no navegador com as fotos.)</em></p>
+</div>
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Backend:**
+    * Node.js: Ambiente de execução JavaScript.
+    * Express.js: Framework web para criar o servidor.
+    * `exifr`: Para ler metadados EXIF das imagens (especialmente GPS).
+    * `fast-csv`: Para manipulação (leitura e escrita) de arquivos CSV.
+    * `fs` (File System): Módulo nativo do Node.js para interagir com o sistema de arquivos.
+    * `path`: Módulo nativo do Node.js para lidar com caminhos de arquivos.
+* **Frontend:**
+    * HTML5: Estrutura da página.
+    * CSS3: Estilização.
+    * JavaScript (Vanilla): Interatividade no cliente.
+    * EJS (Embedded JavaScript templates): Motor de templates para renderizar HTML dinamicamente no servidor.
+    * Leaflet: Biblioteca JavaScript para mapas interativos.
+    * Google Maps Tiles: Camada de mapa base.
+* **Utilitários:**
+    * NPM: Gerenciador de pacotes do Node.js.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+/GeoPhotoMap
+│
+├── /img                  # Pasta contendo as imagens JPEG georreferenciadas
+├── /node_modules         # Dependências instaladas via npm
+├── /views                # Templates EJS utilizados na renderização do mapa
+│   └── mapa.ejs          # Template principal que exibe o mapa e a galeria
+│
+├── app.js                # Servidor Express que lê o CSV e exibe o mapa
+├── gerar_csv.js          # Script que extrai dados GPS de imagens e gera o CSV
+├── coordenadas.csv       # Arquivo CSV com nome, latitude, longitude e HTML das imagens
+├── package.json          # Arquivo de configuração do projeto com dependências e scripts
+└── package-lock.json     # Versões exatas das dependências instaladas
+```
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em seu sistema:
+
+- Node.js (versão 14 ou superior)
+- npm (gerenciador de pacotes Node.js)
+
+---
+
+## 🚀 Como Rodar o Projeto: (Passo a Passo)
 
 Siga estes passos para ver a mágica acontecer:
 
@@ -9,11 +119,10 @@ Siga estes passos para ver a mágica acontecer:
   Abra seu terminal e execute:
 
   ```bash
-  git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-  cd SEU_REPOSITORIO
+  git clone https://github.com/MagalhaesVini/GeoPhotoMap.git
+  cd GeoPhotoMap
   ```
 
-  Substitua `SEU_USUARIO/SEU_REPOSITORIO` pelo caminho real do seu projeto.
 </details>
 
 <details>
@@ -39,7 +148,7 @@ Siga estes passos para ver a mágica acontecer:
   Exemplo:
 
   ```
-  SEU_REPOSITORIO/
+  GeoPhotoMap/
   ├── img/
   │   ├── foto_praia.jpg
   │   ├── montanha_aventura.jpeg
@@ -133,18 +242,6 @@ Siga estes passos para ver a mágica acontecer:
 
 ---
 
-## 💡 Possíveis Melhorias Futuras
-
-- ✨ **Cluster de marcadores** (`leaflet.markercluster`)  
-- 🧭 **Rotas entre pontos** (`leaflet-routing-machine`)  
-- 📅 **Filtro por data/hora**  
-- 🏷️ **Tags e descrições por imagem**  
-- 💾 **Upload via navegador**  
-- ⚙️ **CSV dinâmico no frontend/backend**  
-- 🎨 **Estilo aprimorado**
-
----
-
 ## 🤔 Solução de Problemas Comuns
 
 **"Mapa não mostra nenhuma foto" / "Galeria vazia"**
@@ -155,34 +252,32 @@ Siga estes passos para ver a mágica acontecer:
 - Renomeie corretamente o CSV gerado para `coordenadas.csv`
 - Verifique mensagens no console do terminal e no navegador
 
----
+<details>
+  <summary>Erro ao iniciar o servidor: porta já está em uso</summary>
 
-## 🤝 Como Contribuir
+  Certifique-se que nenhuma outra aplicação está usando a porta 3000. Pode mudar a porta no arquivo `app.js` ou matar o processo com:
 
-1. Faça um Fork  
-2. Crie uma Branch: `git checkout -b minha-feature`  
-3. Commit: `git commit -m "Adiciona minha feature"`  
-4. Push: `git push origin minha-feature`  
-5. Abra um Pull Request!
+  ```bash
+  npx kill-port 3000
+  ```
+</details>
 
----
+<details>
+  <summary>As imagens não aparecem no mapa</summary>
 
-## 📜 Licença
+  Verifique se o caminho para as imagens está correto e se o arquivo CSV está bem formatado com as colunas corretas (latitude, longitude, nome, url).
+</details>
 
-Este projeto é distribuído sob a licença MIT.
+<details>
+  <summary>Mapa não carrega os marcadores</summary>
 
-```txt
-MIT License
-
-Copyright (c) [Ano] [Seu Nome]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy...
-```
+  Confira no console do navegador se há erros de JavaScript. Verifique se os dados estão sendo passados corretamente do backend para o frontend.
+</details>
 
 ---
 
 <div align="center">
-  <p>Feito com ❤️ e muitas xícaras de ☕ por <a href="https://github.com/SEU_USUARIO">Seu Nome</a>.</p>
-  <a href="mailto:seu_email@exemplo.com"><img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/gmail.svg" alt="Gmail" height="30"></a>
-  <a href="https://www.linkedin.com/in/seu_linkedin/" target="_blank"><img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/linkedin.svg" alt="LinkedIn" height="30"></a>
+  <p>Feito com ❤️ e muitas xícaras de ☕ por <a href="https://github.com/magalhaesvini">MagalhaesVini</a>.</p>
+  <a href="mailto:vinizipi@gmail.com"><img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/gmail.svg" alt="Gmail" height="30"></a>
+  <a href="https://www.linkedin.com/in/magalhaesvinicius/" target="_blank"><img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/linkedin.svg" alt="LinkedIn" height="30"></a>
 </div>
