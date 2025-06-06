@@ -22,6 +22,15 @@
   <img src="https://img.shields.io/github/last-commit/MagalhaesVini/GeoPhotoMap?style=flat-square" alt="Last Commit"/>
 </div>
 
+<div>
+  <p align="center">
+    <a href="https://github.com/MagalhaesVini/GeoPhotoMap/releases/download/v1.0.0/GeoPhotoMap.Setup.1.0.0.exe">
+      <img src="https://img.shields.io/badge/⬇️ Download%20para%20Windows-blue?style=for-the-badge&logo=windows" alt="Baixar GeoPhotoMap para Windows">
+    </a>
+  </p>
+</div>
+
+
 ## 📚 Sumário
 
 - [✨ Funcionalidades Incríveis](#-funcionalidades-incríveis)  
